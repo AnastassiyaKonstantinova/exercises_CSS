@@ -1,0 +1,13 @@
+body {
+	--color_black: #011212;
+	--dimension1: 100px;
+	--color_ball: #ff8800;
+	background-color: var(--color_black);
+}
+
+.ball {
+	width: var(--dimension1);
+	height: var(--dimension1);
+	background-color: var(--color_ball);
+	border-radius: calc(var(--dimension1) / 2);
+}
