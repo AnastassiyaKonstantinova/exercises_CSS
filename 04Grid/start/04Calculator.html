@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=D, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.container {
+				display: grid;
+				grid-template-columns: repeat(4, 25%);
+				grid-auto-rows: 35px;
+				grid-gap: 0.05em;
+				font-size: 20px;
+				align-items: stretch;
+				width: 50%;
+				height: 50%;
+			}
+			.container div {
+				border: 1px solid black;
+				text-align: center;
+				/*padding-top: calc((35px - 20px) / 2);*/
+				display: grid;
+				align-items: center;
+			}
+			.container > .initial_sum {
+				grid-column: span 4;
+				background-color: grey;
+				text-align: right;
+			}
+			.operations {
+				text-align: center;
+				background-color: lightblue;
+			}
+			.number {
+				background-color: lightgrey;
+			}
+			.total_sum {
+				background-color: lightcoral;
+				grid-row: span 4;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="initial_sum">0</div>
+			<div class="operations">+</div>
+			<div class="operations">-</div>
+			<div class="operations">*</div>
+			<div class="operations">÷</div>
+			<div class="number">7</div>
+			<div class="number">8</div>
+			<div class="number">9</div>
+			<div class="total_sum">=</div>
+			<div class="number">4</div>
+			<div class="number">5</div>
+			<div class="number">6</div>
+			<div class="number">1</div>
+			<div class="number">2</div>
+			<div class="number">3</div>
+			<div class="number">0</div>
+			<div class="number">.</div>
+			<div class="number">AC</div>
+		</div>
+	</body>
+</html>
